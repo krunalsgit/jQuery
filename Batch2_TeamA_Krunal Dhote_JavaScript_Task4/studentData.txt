@@ -1,0 +1,52 @@
+{
+    "data":[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "dob": "Fri, 10 Mar 2023",
+        "email": "john.doe@example.com",
+        "address": "123 Main St, Anytown, USA",
+        "year": 2023
+    },
+    {
+        "id": 2,
+        "name": "Jane Wilson",
+        "dob": "Fri, 10 Mar 2023",
+        "email": "jane.doe@example.com",
+        "address": "456 Elm St, Anytown, USA",
+        "year": 2023
+    },
+    {
+        "id": 3,
+        "name": "Bob Bob",
+        "dob": "Fri, 10 Mar 2023",
+        "email": "bob.smith@example.com",
+        "address": "789 Oak Ave, Anytown, USA",
+        "year": 2022
+    },
+    {
+        "id": 4,
+        "name": "Alice Johnson",
+        "dob": "Tue, 28 Feb 2023",
+        "email": "alice.johnson@example.com",
+        "address": "321 Maple Rd, Anytown, USA",
+        "year": 2024
+    },
+    {
+        "id": 5,
+        "name": "Michael Brown",
+        "dob": "Tue, 28 Feb 2023",
+        "email": "michael.brown@example.com",
+        "address": "555 Pine St, Anytown, USA",
+        "year": 2022
+    },
+    {
+        "id": 6,
+        "name": "Emily Wilson",
+        "dob": "Tue, 28 Feb 2023",
+        "email": "emily.wilson@example.com",
+        "address": "777 Cedar Ln, Anytown, USA",
+        "year": 2024
+    }
+  ]
+}

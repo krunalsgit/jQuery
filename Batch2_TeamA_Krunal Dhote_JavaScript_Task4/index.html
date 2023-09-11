@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fevicon For  WebPage -->
+    <link rel="shortcut icon" href="Images/Krunal Dhote.png">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Datatable Link  -->
+    <link rel="stylesheet" href="CSS/dataTable.css">
+
+    <!-- JQuery  -->
+    <script src="js/jQuery.js"></script>
+
+    <!-- Datatable Script  -->
+    <script src="JS/dataTable.js"></script>
+
+    <title>Krunal Dhote Task 4</title>
+
+
+</head>
+
+<body>
+    <div class="container mt-5">
+
+        <div id="alertValidation">
+
+        </div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <!-- Basic Details Form  -->
+        <h1 class="text-center">Student Form</h1>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="my-5 btn btn-primary float-end " data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Add Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" id="StudentForm">
+                            <div class="row mt-1">
+                                <div class="mb-3  col-6">
+                                    <label for="formGroupExampleInput" class="form-label">First Name</label>
+                                    <input id="fname" type="text" class="form-control" placeholder="First Name"
+                                        required>
+                                    <div id="fnameErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                                    <input id="lname" type="text" class="form-control" placeholder="Last Name" required>
+                                    <div id="lnameErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="formGroupExampleInput" class="form-label">Date Of Birth</label>
+                                    <input id="dob" type="date" class="form-control" required>
+                                    <div id="dobErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                                    <input id="email" type="email" class="form-control" placeholder="example@gmail.com"
+                                        required>
+                                    <div id="mailErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="formGroupExampleInput" class="form-label">Address</label>
+                                    <input id="address" type="" class="form-control" placeholder="Address" required>
+                                    <div id="addressErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-6">
+                                    <label for="formGroupExampleInput" class="form-label">Graduation Year</label>
+                                    <input id="graduationYear" type="month" class="form-control" required>
+                                    <div id="grYrErr" class="text-danger m-1"></div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                <button  class="btn btn-primary" type="button" id="submitData" >Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> </div>
+
+            <div class="mt-5">
+                <table class="table" id="studentDataTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr. No.</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">DOB</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Graduation Year</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Script is Linked Here  -->
+
+        <script src="JS/script.js"></script>
+        <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

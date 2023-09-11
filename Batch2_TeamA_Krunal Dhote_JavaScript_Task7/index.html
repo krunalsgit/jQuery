@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fevicon For  WebPage -->
+    <link rel="shortcut icon" href="Images/Krunal Dhote.png">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- Datatable Link  -->
+    <link rel="stylesheet" href="DataTables/datatables.min.css">
+    <link rel="stylesheet" href="DataTables/DataTables-1.13.4/css/dataTables.bootstrap.min.css">
+
+    <!-- JQuery  -->
+    <script src="js/jQuery.js"></script>
+
+    <!-- Datatable Script  -->
+    <script src="DataTables/datatables.min.js"></script>
+    <script src="DataTables/DataTables-1.13.4/js/dataTables.bootstrap.min.js"></script>
+    
+    <title>Krunal Dhote Task 7</title>
+
+</head>
+<body>
+    <div class="" id="submitted">
+    </div>
+    <div class="container">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <!-- Basic Details Form  -->
+        <h1 class="text-center mt-5">Student Form</h1>
+
+        <!-- Button trigger modal -->
+        <button id="AddDetails" type="button" class="my-5 btn btn-primary float-end " data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            Add Details
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="" id="alertValidation">
+            </div>
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Add Details</h5>
+                        <button id="close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" id="StudentForm">
+                            <div class="row mt-5">
+                                <div class="mb-3  col-md-4">
+                                    <label for="formGroupExampleInput" class="form-label">First Name</label>
+                                    <input id="fname" type="text" class="form-control"  placeholder="First Name" required>
+                                    <div id="fnameErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-md-4">
+                                    <label for="formGroupExampleInput" class="form-label">Last Name</label>
+                                    <input id="lname" type="text" class="form-control" placeholder="Last Name" required>
+                                    <div id="lnameErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-md-4">
+                                    <label for="formGroupExampleInput" class="form-label">Date Of Birth</label>
+                                    <input id="dob" type="date" class="form-control"  required>
+                                    <div id="dobErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-md-4">
+                                    <label for="formGroupExampleInput" class="form-label">Contact Number</label>
+                                    <input id="contactNo" type="tel" class="form-control" placeholder="+91" required>
+                                    <div id="contactNoErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-md-4">
+                                    <label for="formGroupExampleInput" class="form-label">Email</label>
+                                    <input id="email" type="email" class="form-control"
+                                        placeholder="example@gmail.com" required>
+                                    <div id="mailErr" class="text-danger m-1"></div>
+                                </div>
+                                <div class="mb-3 col-md-4">
+                                    <label for="formGroupExampleInput" class="form-label">Address</label>
+                                    <input id="address" type="" class="form-control"  placeholder="Address" required>
+                                    <div id="addressErr" class="text-danger m-1"></div>
+                                </div>
+                            </div>
+                
+                            <hr>
+                
+                
+                            <!-- Education Field  -->
+                
+                            <div class="row mt-5">
+                                <div class="col-6">
+                                    <h2>Education:</h2>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" class="addBtn border-0 rounded-circle bg-dark float-end" onclick="Add()"><i
+                                            class="text-white fa-solid fa-plus"></i></button>
+                
+                                    <!-- By clicking on + button Add function will be call  -->
+                                </div>
+                            </div>
+                
+                
+                            <!-- This are the Static Row -->
+                
+                         
+                                <div class="row mt-2 form">
+                                    <div class="mb-3  col">
+                                        <label for="formGroupExampleInput" class="form-label">Degree/Board</label>
+                                        <input id="deg0" type="text" class="form-control degree" required>
+                                        <div id="degErr0" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label">School/Colege</label>
+                                        <input id="clg0" type="text" class="form-control college"
+                                            required>
+                                        <div id="clgErr0" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label">Start Date</label>
+                                        <input id="strDt0" type="month" class="form-control startDt" required>
+                                        <div id="strDtErr0" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label">Passout Year</label>
+                                        <input id="psDt0" type="month" class="form-control passYr" required>
+                                        <div id="psDtErr0" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label">Percentage</label>
+                                        <input id="per0" type="number"  class="form-control percent" min="0" max="100"
+                                            placeholder="Don't use % sign" step="0.01" required>
+                                        <div id="perErr0" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label">Backlog</label>
+                                        <input id="bc0" type="number"  class="form-control back" min="0" placeholder="If Any">
+                                        <div id="bcErr0" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class=" col">
+                
+                                    </div>
+                                    <hr>
+                                </div>
+                
+                                <div class="row form">
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label hide">Degree/Board</label>
+                                        <input id="deg1" id="deg1" type="text" class="form-control degree" required>
+                                        <div id="degErr1" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label hide">School/Colege</label>
+                                        <input id="clg1" type="text" class="form-control college" required>
+                                        <div id="clgErr1" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label hide">Start Date</label>
+                                        <input id="strDt1" type="month" class="form-control startDt" required>
+                                        <div id="strDtErr1" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label hide">Passout Year</label>
+                                        <input id="psDt1" type="month"  class="form-control passYr" required>
+                                        <div id="psDtErr1" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label hide">Percentage</label>
+                                        <input id="per1" type="number" class="form-control percent" min="0" max="100"
+                                            placeholder="Don't use % sign" step="0.01" required>
+                                        <div id="perErr1" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <label for="formGroupExampleInput" class="form-label hide">Backlog</label>
+                                        <input id="bc1" type="number" class="form-control back" min="0" placeholder="If Any">
+                                        <div id="bcErr1" class="text-danger m-1"></div>
+                                    </div>
+                                    <div class="mb-3 col"></div>
+                                    <hr>
+                                </div>
+                            <div id="form"> <!-- Id is used for append new child -->
+                                <!-- Row Will be Add Here After Clicking on Add Button -->
+                            </div>
+                            <div class="text-center">
+                                <button type="button" id="submitData"
+                                 class="btn btn-primary">Submit</button>
+                                 <button type="button" id="updateData"
+                                 class="btn btn-primary" onclick="updateDetail()">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> </div>
+
+            <div class="mt-5">
+                <table class="table" id="studentDataTable">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope="col">Name</th>
+                            <th scope="col">DOB</th>
+                            <th scope="col">Contact</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Script is Linked Here  -->
+
+        <script src="JS/script.js"></script>
+        <script src="Bootstrap/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

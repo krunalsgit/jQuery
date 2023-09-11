@@ -1,0 +1,299 @@
+{"data": [
+  {
+    "id": 1,
+    "name": "Krunal Dhote",
+    "dob": "Tue, Oct 09 2001",
+    "email": "krunal.d@shaligraminfotech.com",
+    "address": "Amravati",
+    "graduationYear": 2023,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "10th",
+        "college": "NTR Highschool Warud",
+        "startDate": "Jun 26 2016",
+        "passOutYear": 2017,
+        "percentage":82.60,
+        "backlog": 0
+      },
+      {
+        "educationId": 2,
+        "degree": "12th",
+        "college": "MFM Warud",
+        "startDate": "June 15 2018",
+        "passOutYear": 2019,
+        "percentage":63.54,
+        "backlog": 0
+      },
+      {
+        "educationId": 3,
+        "degree": "B.E",
+        "college": "P.R.Pote",
+        "startDate": "Aug 08 2019",
+        "passOutYear": 2023,
+        "percentage":79.79,
+        "backlog": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bobbie Walker",
+    "dob": "Wed, Apr 13 2011",
+    "email": "bobbiewalker@gynko.com",
+    "address": "Rajasthan",
+    "graduationYear": 2012,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "M.COM",
+        "college": "Sipna",
+        "startDate": "Jun 25 2009",
+        "passOutYear": 2005,
+        "percentage":50,
+        "backlog": 5
+      },
+      {
+        "educationId": 2,
+        "degree": "B.B.A",
+        "college": "I.I.T.",
+        "startDate": "Apr 28 2017",
+        "passOutYear": 1976,
+        "percentage":50,
+        "backlog": 5
+      },
+      {
+        "educationId": 3,
+        "degree": "B.COM",
+        "college": "P.R.Pote",
+        "startDate": "Oct 01 1986",
+        "passOutYear": 2000,
+        "percentage":50,
+        "backlog": 5
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Susie Gay",
+    "dob": "Mon, Mar 03 1975",
+    "email": "susiegay@gynko.com",
+    "address": "Chennai",
+    "graduationYear": 2013,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "M.E.",
+        "college": "G.T.U.",
+        "startDate": "Jan 20 2014",
+        "passOutYear": 1990,
+        "percentage":50,
+        "backlog": 1
+      },
+      {
+        "educationId": 2,
+        "degree": "M.E.",
+        "college": "V.M.V.",
+        "startDate": "Jan 10 1989",
+        "passOutYear": 1973,
+        "percentage":50,
+        "backlog": 1
+      },
+      {
+        "educationId": 3,
+        "degree": "M.E.",
+        "college": "Vidhya Bharti",
+        "startDate": "Oct 23 2010",
+        "passOutYear": 1979,
+        "percentage":50,
+        "backlog": 4
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Abby Petty",
+    "dob": "Sun, Jan 26 1975",
+    "email": "abbypetty@gynko.com",
+    "address": "Kolkata",
+    "graduationYear": 1989,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "M.COM",
+        "college": "H.V.P.M.",
+        "startDate": "Mar 25 1983",
+        "passOutYear": 2004,
+        "percentage":50,
+        "backlog": 4
+      },
+      {
+        "educationId": 2,
+        "degree": "B.E.",
+        "college": "Vidhya Bharti",
+        "startDate": "Aug 26 2012",
+        "passOutYear": 1970,
+        "percentage":50,
+        "backlog": 5
+      },
+      {
+        "educationId": 3,
+        "degree": "B.B.A",
+        "college": "H.V.P.M.",
+        "startDate": "Dec 23 2011",
+        "passOutYear": 1970,
+        "percentage":50,
+        "backlog": 5
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Meagan Macias",
+    "dob": "Fri, Jul 16 1976",
+    "email": "meaganmacias@gynko.com",
+    "address": "Bengoloru",
+    "graduationYear": 2014,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "M.B.A",
+        "college": "H.V.P.M.",
+        "startDate": "Nov 05 1983",
+        "passOutYear": 2014,
+        "percentage":50,
+        "backlog": 3
+      },
+      {
+        "educationId": 2,
+        "degree": "M.E.",
+        "college": "Vidhya Bharti",
+        "startDate": "Feb 15 1991",
+        "passOutYear": 1971,
+        "percentage":50,
+        "backlog": 3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Willie Lynch",
+    "dob": "Tue, Dec 17 1985",
+    "email": "willielynch@gynko.com",
+    "address": "Mumbai",
+    "graduationYear": 2014,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "B.B.A",
+        "college": "I.I.T.",
+        "startDate": "Jan 05 1996",
+        "passOutYear": 2015,
+        "percentage":50,
+        "backlog": 2
+      },
+      {
+        "educationId": 2,
+        "degree": "M.B.A",
+        "college": "Ram Meghe",
+        "startDate": "Sep 07 2015",
+        "passOutYear": 2016,
+        "percentage":50,
+        "backlog": 0
+      },
+      {
+        "educationId": 3,
+        "degree": "B.B.A",
+        "college": "V.M.V.",
+        "startDate": "Oct 22 2019",
+        "passOutYear": 1992,
+        "percentage":50,
+        "backlog": 3
+      },
+      {
+        "educationId": 4,
+        "degree": "B.TECH",
+        "college": "I.I.T.",
+        "startDate": "Jun 23 2003",
+        "passOutYear": 1981,
+        "percentage":50,
+        "backlog": 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Freeman Wiggins",
+    "dob": "Fri, Mar 18 1988",
+    "email": "freemanwiggins@gynko.com",
+    "address": "Delhi",
+    "graduationYear": 2022,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "M.TECH",
+        "college": "Vidhya Bharti",
+        "startDate": "May 24 1979",
+        "passOutYear": 2021,
+        "percentage":50,
+        "backlog": 1
+      },
+      {
+        "educationId": 2,
+        "degree": "M.TECH",
+        "college": "Vidhya Bharti",
+        "startDate": "Nov 02 2012",
+        "passOutYear": 1987,
+        "percentage":50,
+        "backlog": 0
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Nicole Fisher",
+    "dob": "Sun, Jul 11 1999",
+    "email": "nicolefisher@gynko.com",
+    "address": "USA",
+    "graduationYear": 2007,
+    "education": [
+      {
+        "educationId": 1,
+        "degree": "B.B.A",
+        "college": "Vidhya Bharti",
+        "startDate": "Oct 19 1999",
+        "passOutYear": 1980,
+        "percentage":50,
+        "backlog": 1
+      },
+      {
+        "educationId": 2,
+        "degree": "M.COM",
+        "college": "G.T.U.",
+        "startDate": "Nov 04 1999",
+        "passOutYear": 2013,
+        "percentage":50,
+        "backlog": 2
+      },
+      {
+        "educationId": 3,
+        "degree": "M.TECH",
+        "college": "P.R.Pote",
+        "startDate": "Nov 26 1983",
+        "passOutYear": 2015,
+        "percentage":50,
+        "backlog": 0
+      },
+      {
+        "educationId": 4,
+        "degree": "M.E.",
+        "college": "Sipna",
+        "startDate": "Sep 04 1972",
+        "passOutYear": 1976,
+        "percentage":50,
+        "backlog": 1
+      }
+    ]
+  }
+]
+}
